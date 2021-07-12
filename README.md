@@ -1,7 +1,7 @@
 # movieapp [![Netlify Status](https://api.netlify.com/api/v1/badges/1c9e4b56-a6a6-4810-a7ca-aca048a15a1d/deploy-status)](https://app.netlify.com/sites/ecabigting-movieapp/deploys)
 Movie App build with ReactJS and utilizing The Movie DB API.
 
-You can check a deployed version (here)[https://ecabigting-movieapp.netlify.app/]
+You can check a deployed version [here]](https://ecabigting-movieapp.netlify.app/).
 
 
 ## Dependencies ##
