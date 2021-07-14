@@ -15,10 +15,9 @@ export const Content = styled.div`
 `;
 
 export const AppLogoImg = styled.img`
-    width: 200px;
-    
+    width: 75px;
     @media screen and (max-width:500) {
-        width: 150px;;
+        width: 50px;;
     }
 `;
 

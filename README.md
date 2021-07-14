@@ -1,3 +1,10 @@
+<!-- ->![Movie App](src/images/movieapp_logo.svg "Movie App")<- -->
+
+<p align="center">
+    <img src="src/images/movieapp_logo.svg">
+</p>
+
+
 # movieapp [![Netlify Status](https://api.netlify.com/api/v1/badges/1c9e4b56-a6a6-4810-a7ca-aca048a15a1d/deploy-status)](https://app.netlify.com/sites/ecabigting-movieapp/deploys)
 Movie App build with ReactJS and utilizing The Movie DB API.
 

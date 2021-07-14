@@ -1,6 +1,6 @@
 import React from 'react';
 // load svg files from image folder
-import MovieAppLogo from '../../images/react-movie-logo.svg';
+import MovieAppLogo from '../../images/movieapp_logo.svg';
 import TMDBLogo from '../../images/tmdb_logo.svg';
 // load the styled components
 import { Wrapper, Content, AppLogoImg, TMDBLogoImg } from './Header.styles';
