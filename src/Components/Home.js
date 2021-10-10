@@ -9,7 +9,7 @@ import Grid from './Grid'
 import Thumb from './Thumb'
 import Spinner from './Spinner'
 import SearchBar from './SearchBar'
-
+import Footer from './Footer'
 // hook
 import { useHomeFetch } from '../hooks/useHomeFetch'
 
@@ -44,6 +44,7 @@ const Home = () => {
                 ))}
             </Grid>
             <Spinner/>
+            <Footer/>
         </>
     );
 };
