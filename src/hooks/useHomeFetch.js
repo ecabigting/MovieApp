@@ -35,9 +35,11 @@ export const useHomeFetch = () => {
         setLoading(false);
     }
 
-    useEffect(()=>{
-        fetchMovies(1);
-    },[]); // the comma with [] is called dependency array for useEffect to know when to trigger
+    //initial and search render
+    useEffect(()=> {
+        setState(initialState);
+        fetchMovies(1, searchTerm);
+    },[searchTerm]); // the comma with [] is called dependency array for useEffect to know when to trigger
 
-    return { state, loading, error,setSearchTerm } ;
+    return { state, loading, error, searchTerm, setSearchTerm } ;
 };
