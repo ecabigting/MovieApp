@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // load svg files from image folder
 import MovieAppLogo from '../../images/movieapp_logo.svg';
 import TMDBLogo from '../../images/tmdb_logo.svg';
@@ -9,8 +10,10 @@ import { Wrapper, Content, AppLogoImg, TMDBLogoImg } from './Header.styles';
 const Header = () => (
     <Wrapper>
         <Content>
-            <AppLogoImg src={MovieAppLogo} alt='MovieAppLogo'/>
-            <TMDBLogoImg src={TMDBLogo} alt='The Movie DB Logo'/>
+            <Link to='/'>
+                <AppLogoImg src={MovieAppLogo} alt='MovieAppLogo'/>
+            </Link>
+                <TMDBLogoImg src={TMDBLogo} alt='The Movie DB Logo'/>
         </Content>
     </Wrapper>
 );
