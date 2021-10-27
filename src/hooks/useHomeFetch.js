@@ -1,6 +1,8 @@
 import { useState,useEffect, useRef } from 'react'
 // load the API
 import API from '../API'
+// katulong
+import { isPersistedState } from '../helpers';
 
 const initialState = {
     page: 0,
@@ -38,6 +40,13 @@ export const useHomeFetch = () => {
 
     //initial and search render
     useEffect(()=> {
+        if(!searchTerm) {
+            const sessionState = isPersistedState('stateHome');
+            if(sessionState){
+                setState(sessionState);
+                return;
+            }
+        }
         setState(initialState);
         fetchMovies(1, searchTerm);
     },[searchTerm]); // the comma with [] is called dependency array for useEffect to know when to trigger
@@ -48,5 +57,11 @@ export const useHomeFetch = () => {
         fetchMovies(state.page+1, searchTerm);
         setIsLoadingMore(false);
     },[isLoadingMore,searchTerm,state.page])
+
+    // save to session storage
+    useEffect(()=>{
+        if(!searchTerm) sessionStorage.setItem('stateHome', JSON.stringify(state))
+    },[searchTerm,state]);
+
     return { state, loading, error, searchTerm, setSearchTerm, setIsLoadingMore } ;
 };
