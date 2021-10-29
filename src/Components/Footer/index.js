@@ -1,4 +1,4 @@
-import React, { useState,useEffect,useRef  } from "react";
+import React from "react";
 import { Wrapper, Content } from "./Footer.styles";
 import GithubIcon from "../../images/githubicon.svg"
 
