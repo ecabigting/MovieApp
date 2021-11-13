@@ -1,8 +1,6 @@
 import React from 'react'
-// load the API
-import API from '../API'
 // load config
-import { POST_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL, POSTER_SIZE} from '../config'
+import { BACKDROP_SIZE, IMAGE_BASE_URL, POSTER_SIZE} from '../config'
 // load components
 import HeroImage from './HeroImage'
 import Grid from './Grid'

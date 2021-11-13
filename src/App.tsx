@@ -1,5 +1,6 @@
 import React from 'react';
 // routing
+// @ts-ignore
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 // load the the global style
 import { GlobalStyle } from './GlobalStyle';
@@ -9,7 +10,7 @@ import Home from './Components/Home'
 import Movie from './Components/Movie';
 import NotFound from './Components/NotFound';
 
-const App = () => (  
+const App: React.FC = () => (  
     <Router>
       <Header />
       <Routes>
