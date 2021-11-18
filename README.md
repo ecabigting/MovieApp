@@ -18,8 +18,6 @@
 
 Movie App build with ReactJS and utilizing The Movie DB API.
 
-**UNDER DEVELOPMENT - Check main branch for progress!**
-
 You can check a deployed version [here](https://ecabigting-movieapp.netlify.app/).
 
 
